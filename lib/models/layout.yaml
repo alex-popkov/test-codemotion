@@ -1,0 +1,18 @@
+NAMESPACE: 'test.codemotion.models.Layout'
+
+REQUIRE:
+    - 'test.codemotion.models.Menu'
+
+FIELDS:
+
+  title:
+
+    index: 0
+    type: zz.models.enums.FieldType.STRING
+    required: false
+
+  menu:
+
+    index: 1
+    type: test.codemotion.models.Menu
+    required: false

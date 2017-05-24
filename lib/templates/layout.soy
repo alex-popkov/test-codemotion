@@ -1,0 +1,33 @@
+{namespace test.codemotion.templates.layout}
+
+/**
+ * Layout model template.
+ * @param key
+ * @param value
+ */
+{template .model}
+    <div
+        class="{css test-codemotion-layout}">
+
+        // Header
+        <header
+            class="{css test-codemotion-layout--header}">
+            <div
+                data-model="{$key.title}"
+                class="{css test-codemotion-layout--title}">
+                {$value.title}
+            </div>
+            <div
+                data-model="{$key.menu}"
+                data-view="test-codemotion-views-menu"
+                data-controller="test-codemotion-controllers-menu">
+            </div>
+        </header>
+
+        // View
+        <main
+            id="{css view-wrapper}"
+            class="{css test-codemotion-layout--view-wrapper}">
+        </main>
+    </div>
+{/template}

@@ -1,0 +1,27 @@
+NAMESPACE: 'test.codemotion.models.Invoices'
+
+FIELDS:
+
+  id:
+
+    index: 1
+    type: zz.models.enums.FieldType.STRING
+    required: false
+
+  customerId:
+
+    index: 2
+    type: zz.models.enums.FieldType.STRING
+    required: false
+    
+  discount:
+    
+    index: 3
+    type: zz.models.enums.FieldType.NUMBER
+    required: false
+
+  total:
+
+    index: 4
+    type: zz.models.enums.FieldType.NUMBER
+    required: false

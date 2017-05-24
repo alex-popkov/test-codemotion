@@ -1,0 +1,20 @@
+{
+	"name": "test.codemotion",
+	"version": "20170524.0.0",
+	"description": "test job for codemotion",
+	"author": {
+		"name": "Popkov Alexander",
+		"email": "popkov.aleksander@gmail.com"
+	},
+	"license": "Apache-2.0",
+    "homepage": "http://www.example.com",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/author/test.codemotion.git"
+	},
+	"dependencies": {
+
+	    "imazzine-developer-kit": "",
+		"imazzine-developer-lib": ""
+	}
+}

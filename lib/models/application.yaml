@@ -1,0 +1,15 @@
+NAMESPACE: 'test.codemotion.models.Application'
+
+FIELDS:
+
+  name:
+
+    index: 0
+    type: zz.models.enums.FieldType.STRING
+    required: false
+
+  version:
+
+    index: 1
+    type: zz.models.enums.FieldType.STRING
+    required: false

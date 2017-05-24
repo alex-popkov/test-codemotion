@@ -1,0 +1,19 @@
+{namespace test.codemotion.templates.menu}
+
+
+/**
+ * @param key
+ * @param value
+ */
+{template .model}
+    <a
+        href="void:0"
+        class="{css test-codemotion-menu-link} {$value.cssClass}"
+        data-class="{$key.active}:{css active}"
+        data-action>
+        <span
+            data-model="{$key.caption}">
+            {$value.caption}
+        </span>
+    </a>
+{/template}
