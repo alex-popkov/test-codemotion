@@ -15,6 +15,7 @@
 	"dependencies": {
 
 	    "imazzine-developer-kit": "",
-		"imazzine-developer-lib": ""
+		"imazzine-developer-lib": "",
+	    "zz.styles": ""
 	}
 }

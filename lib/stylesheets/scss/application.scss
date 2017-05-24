@@ -1,4 +1,4 @@
-div.test-codemotion-application{
+div.application{
     
     display: block;
     position: absolute;
@@ -6,6 +6,7 @@ div.test-codemotion-application{
     height: 100%;
     top: 0;
     left: 0;
+    color: #4c4c4c;
     & > div{
         
         display: block;

@@ -1,0 +1,139 @@
+div.modal {
+
+  position: fixed;
+  box-sizing: border-box;
+  overflow-y: hidden;
+  background: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, .12), 0 2px 4px rgba(0, 0, 0, .24);
+  transform: scale( 0, 0);
+  transition: transform 100ms;
+  &.show {
+
+    transform: scale( 1, 1);
+  }
+  & div.modal--header {
+
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+    & div.modal--title {
+
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px;
+      box-sizing: border-box;
+      & div.modal--title-text {
+
+        font-weight: bold;
+      }
+      & div.modal--title-icon {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+      }
+    }
+    & div.modal--buttons {
+
+      display: flex;
+      align-items: center;
+      padding: 8px;
+    }
+    & i {
+
+      font-size: 20px;
+    }
+  }
+  & div.modal--body {
+
+    position: relative;
+    box-sizing: border-box;
+    height: calc( 100% - 40px );
+    max-height: calc( 100vh - 150px );
+    padding: 25px 20px 10px;
+    overflow-y: auto;
+    & div.filename {
+        
+        display: table;
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+        height: 20px;
+        & .modal--text.rename {
+        
+            display: table-cell;
+            max-width: 40%;
+            height: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            text-align: right;
+        }
+        & .mdl-textfield__input.rename {
+            
+            display: table-cell;
+            min-width: 60%;
+            height: 100%;
+            color: #000;
+        }
+    }
+    & div.modal--text {
+
+        height: 20px;
+        padding: 4px 0;
+        font-size: 12px;
+        margin-bottom: 10px;
+        text-align: center;
+        color: #8c8c8c;
+        & span {
+            
+            color: #000;
+        }
+    }
+    & .mdl-textfield__input {
+        
+        font-family: 'Open Sans';
+        font-size: 12px;
+    }
+    & div.modal--input-error {
+
+      font-size: 10px;
+      color: red;
+      text-align: center;
+    }
+    & div.modal--buttons_dialog {
+
+      margin-top: 10px;
+      text-align: right;
+      & .mdl-button {
+          
+          font-size: 12px;
+      }
+      & button.modal--button_ok {
+
+        min-width: initial;
+      }
+      & button.modal--button_cancel {
+          
+        min-width: initial;
+        margin-left: 10px;
+      }
+    }
+  }
+  & i.modal--btn {
+
+    color: #616161;
+    cursor: pointer;
+    &:hover {
+
+      color: black;
+    }
+  }
+}

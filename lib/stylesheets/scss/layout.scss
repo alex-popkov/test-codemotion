@@ -1,4 +1,4 @@
-div.dataset.test-codemotion-layout {
+div.layout {
     
     display: block;
     position: absolute;
@@ -24,5 +24,57 @@ div.dataset.test-codemotion-layout {
             top: 0;
             left: 0;
         }
+    }
+    & div.layout--header-title {
+
+        margin-right: 50px;
+    }
+    & div.layout-btn {
+
+        width: 56px;
+        height: 56px;
+        margin: auto;
+        padding: 0;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: 0;
+        box-shadow: 0 1px 1.5px 1px rgba(0,0,0,.12),0 1px 1px 0 rgba(0,0,0,.24);
+        border: none;
+        box-sizing: border-box;
+        background: #fff;
+        color: #4285f4;
+        border-radius: 50%;
+        outline: none;
+        cursor: pointer;
+        text-decoration: none;
+        text-align: center;
+        line-height: 62px;
+    }
+    & div.layout-btn_add {
+
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        transition: all 0.1s ease-in-out;
+        -webkit-transition: all 0.1s ease-in-out;
+        -ms-transform: scale( 0, 0 );
+        -webkit-transform: scale( 0, 0 );
+        transform: scale( 0, 0 );
+        color: #3f51b5;
+        &.show {
+
+            -ms-transform: scale( 1, 1 );
+            -webkit-transform: scale( 1, 1 );
+            transform: scale( 1, 1 );
+        }
+    }
+    & div.view-wrapper {
+
+        position: relative;
+        box-sizing: border-box;
+        max-width: 500px;
+        margin: 10px auto;
+        box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
     }
 }

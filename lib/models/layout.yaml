@@ -2,6 +2,7 @@ NAMESPACE: 'test.codemotion.models.Layout'
 
 REQUIRE:
     - 'test.codemotion.models.Menu'
+    - 'test.codemotion.models.Modal'
 
 FIELDS:
 
@@ -15,4 +16,16 @@ FIELDS:
 
     index: 1
     type: test.codemotion.models.Menu
+    required: false
+
+  addBtnShow:
+
+    index: 2
+    type: zz.models.enums.FieldType.BOOLEAN
+    required: false
+
+  modal:
+
+    index: 3
+    type: test.codemotion.models.Modal
     required: false

@@ -7,27 +7,47 @@
  */
 {template .model}
     <div
-        class="{css test-codemotion-layout}">
+        class="{css layout} {css mdl-layout} {css mdl-js-layout} {css mdl-layout--fixed-header}">
 
         // Header
         <header
-            class="{css test-codemotion-layout--header}">
+            class="{css layout--header} {css mdl-layout__header}">
             <div
-                data-model="{$key.title}"
-                class="{css test-codemotion-layout--title}">
-                {$value.title}
-            </div>
-            <div
-                data-model="{$key.menu}"
-                data-view="test-codemotion-views-menu"
-                data-controller="test-codemotion-controllers-menu">
+                class="{css mdl-layout__header-row}">
+                <div
+                    data-model="{$key.title}"
+                    class="{css layout--header-title}">
+                    {$value.title}
+                </div>
+                <div
+                    class="{css layout--menu-wrapper}"
+                    data-model="{$key.menu}"
+                    data-view="test-codemotion-views-menu"
+                    data-controller="test-codemotion-controllers-menu">
+                </div>
             </div>
         </header>
 
         // View
-        <main
+        <div
             id="{css view-wrapper}"
-            class="{css test-codemotion-layout--view-wrapper}">
-        </main>
+            class="{css view-wrapper}">
+        </div>
+        <div
+            class="{css layout-btn_add} {css layout-btn}"
+            data-class="{$key.addBtnShow}:{css show}"
+            data-action
+            data-add-btn='1'>
+            <i
+                class="{css material-icons}">
+                add
+            </i>
+        </div>
+         <div
+            class="{css modal-wrapper}"
+            data-model="{$key.modal}"
+            data-view="test-codemotion-views-modal"
+            data-controller="test-codemotion-controllers-modal">
+        </div>
     </div>
 {/template}

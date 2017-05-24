@@ -1,0 +1,17 @@
+div.invoices {
+
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px 20px;
+  border-right: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+  background: white;
+  overflow: hidden;
+  & div.invoices--customer {
+
+    margin-right: 20px;
+  }
+}

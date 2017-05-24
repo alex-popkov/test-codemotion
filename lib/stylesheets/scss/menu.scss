@@ -1,0 +1,22 @@
+div.mdl-layout__header-row {
+
+  & div.dataset {
+
+    display: flex;
+    & a.menu-link {
+
+      margin-right: 10px;
+      text-decoration: none;
+      color: white;
+      cursor: pointer;
+      &:hover {
+
+        color: #9fa8da;
+      }
+      &.active {
+
+        color: #9fa8da;
+      }
+    }
+  }
+}

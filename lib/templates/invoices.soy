@@ -6,17 +6,26 @@
  */
 {template .model}
     <div
-        class="{css test-codemotion-invoice}">
-        <span
-            data-model="{$key.customerId}">
-            {$value.customerId}
-        </span>
-        <span>
-            $
-        </span>
-        <span
-            data-model="{$key.total}">
-            {$value.total}
-        </span>
+        class="{css invoices}">
+        <div
+            class="{css invoices--customer}">
+            <span>
+                Customer:
+            </span>
+            <span
+                data-model="{$key.customerId}">
+                {$value.customerId}
+            </span>
+        </div>
+        <div
+            class="{css invoices--total}">
+            <span>
+                Total: $
+            </span>
+            <span
+                data-model="{$key.total}">
+                {$value.total}
+            </span>
+        </div>
     </a>
 {/template}
