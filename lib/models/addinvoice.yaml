@@ -1,0 +1,30 @@
+NAMESPACE: 'test.codemotion.models.AddInvoice'
+
+REQUIRE:
+    - 'test.codemotion.models.Products'
+
+FIELDS:
+
+  customer:
+
+      index: 0
+      type: zz.models.enums.FieldType.STRING
+      required: false
+
+  products:
+
+      index: 1
+      type: test.codemotion.models.Products
+      required: false
+
+  discount:
+
+      index: 2
+      type: zz.models.enums.FieldType.STRING
+      required: false
+
+  total:
+
+    index: 3
+    type: zz.models.enums.FieldType.STRING
+    required: false

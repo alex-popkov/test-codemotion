@@ -1,0 +1,61 @@
+
+{namespace test.codemotion.templates.addinvoice}
+
+
+/**
+ * @param value
+ * @param key
+ */
+{template .model}
+    <div>
+        <div>
+            Select customer
+        </div>
+        <input
+            class="{css mdl-textfield__input}"
+            type="text"
+            placeholder="Enter customer name"
+            data-input="{$key.customer}"
+            value="{$value.customer}">
+        <div>
+            Select products
+        </div>
+        <input
+            class="{css mdl-textfield__input}"
+            type="text"
+            placeholder="Enter product name">
+//        <div
+//            class="{css products-wrapper}"
+//            data-model="{$key.products}"
+//            data-view="test-codemotion-views-products"
+//            data-controller="test-codemotion-controllers-products">
+//        </div>
+        <div>
+            Add discount, %
+        </div>
+        <input
+            class="{css mdl-textfield__input}"
+            type="text"
+            placeholder="Add discount"
+            data-input="{$key.discount}"
+            value="{$value.discount}">
+        <div>
+            <span>
+                Total cost: $
+            </span>
+            <span
+                data-model="{$key.total}">
+                {$value.total}
+            </span>
+        </div>
+        <div
+            class="{css modal--buttons_dialog}">
+            <button
+                class="{css modal--button_ok} {css mdl-button}"
+                data-action
+                data-save-invoice='1'>
+                Save invoice
+            </button>
+        </div>
+    </div>
+{/template}
