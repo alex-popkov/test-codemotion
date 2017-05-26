@@ -1,0 +1,15 @@
+NAMESPACE: 'test.codemotion.models.PopupList'
+
+FIELDS:
+
+  id:
+
+    index: 0
+    type:  zz.models.enums.FieldType.STRING
+    required: false
+
+  name:
+
+    index: 1
+    type:  zz.models.enums.FieldType.STRING
+    required: false

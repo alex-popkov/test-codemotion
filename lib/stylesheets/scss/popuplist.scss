@@ -1,0 +1,30 @@
+
+
+div.popuplist-dataset {
+
+  max-height: 250px;
+  padding: 10px;
+  overflow-y: auto;
+  & div.popuplist-node {
+
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    z-index: 40;
+    overflow: hidden;
+    & div.popuplist-node--title {
+
+      margin-right: 20px;
+      line-height: 20px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 12px;
+    }
+    &:hover {
+
+      background: rgba(0, 0, 0, .05);
+    }
+  }
+}

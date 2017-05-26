@@ -1,7 +1,6 @@
 
 {namespace test.codemotion.templates.addinvoice}
 
-
 /**
  * @param value
  * @param key
@@ -9,37 +8,51 @@
 {template .model}
     <div>
         <div>
+            Customer
+        </div>
+        <div
+            class="{css select-customer}"
+            data-action
+            data-select-customer='1'>
             Select customer
+            <i
+                class="{css material-icons}">
+                arrow_drop_down
+            </i>
         </div>
-        <input
-            class="{css mdl-textfield__input}"
-            type="text"
-            placeholder="Enter customer name"
-            data-input="{$key.customer}"
-            value="{$value.customer}">
         <div>
-            Select products
+            Products
         </div>
-        <input
-            class="{css mdl-textfield__input}"
-            type="text"
-            placeholder="Enter product name">
+        <div
+            class="{css select-products}"
+            data-action
+            data-select-products='1'>
+            Select products
+            <i
+                class="{css material-icons}">
+                arrow_drop_down
+            </i>
+        </div>
 //        <div
 //            class="{css products-wrapper}"
 //            data-model="{$key.products}"
 //            data-view="test-codemotion-views-products"
 //            data-controller="test-codemotion-controllers-products">
 //        </div>
-        <div>
-            Add discount, %
-        </div>
-        <input
-            class="{css mdl-textfield__input}"
-            type="text"
-            placeholder="Add discount"
-            data-input="{$key.discount}"
-            value="{$value.discount}">
-        <div>
+        <div
+            class="{css add-discount}">
+            <div>
+                Add discount, %
+            </div>
+            <input
+                class="{css mdl-textfield__input}"
+                type="text"
+                placeholder="Add discount"
+                data-input="{$key.discount}"
+                value="{$value.discount}">
+            </div>
+        <div
+            class="{css total-cost}">
             <span>
                 Total cost: $
             </span>

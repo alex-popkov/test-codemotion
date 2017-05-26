@@ -1,0 +1,31 @@
+
+div.select-customer, div.select-products {
+
+  position: relative;
+  margin-bottom: 10px;
+  min-width: 250px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  & i.material-icons {
+
+    position: absolute;
+    right: 5px;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+div.add-discount {
+
+  display: flex;
+  input {
+
+    max-width: 100px;
+    margin-left: 10px;
+  }
+}
+
+div.total-cost {
+
+  margin-top: 30px;
+}

@@ -1,0 +1,45 @@
+{namespace test.codemotion.templates.popuplist}
+
+/**
+ * @param uid
+ */
+{template .dataset}
+    <div
+        class="{css dataset} {css popuplist-dataset}"
+        data-set="{$uid}">
+    </div>
+{/template}
+
+/**
+ * @param key
+ * @param value
+ */
+{template .customer}
+    <div
+        class="{css popuplist-node} {$value.cssClass}"
+        data-action
+        data-add-customer-to-invoice="1">
+        <div
+            class="{css popuplist-node--title}"
+            data-model="{$key.name}">
+            {$value.name}
+        </div>
+    </div>
+{/template}
+
+/**
+ * @param key
+ * @param value
+ */
+{template .products}
+    <div
+        class="{css popuplist-node} {$value.cssClass}"
+        data-action
+        data-add-product-to-invoice="1">
+        <div
+            class="{css popuplist-node--title}"
+            data-model="{$key.name}">
+            {$value.name}
+        </div>
+    </div>
+{/template}

@@ -1,0 +1,33 @@
+NAMESPACE: 'test.codemotion.models.Popup'
+
+FIELDS:
+
+  id:
+
+    index: 0
+    type:  zz.models.enums.FieldType.STRING
+    required: false
+
+  height:
+
+    index: 1
+    type:  zz.models.enums.FieldType.NUMBER
+    required: false
+
+  width:
+
+    index: 2
+    type:  zz.models.enums.FieldType.NUMBER
+    required: false
+
+  top:
+
+    index: 3
+    type:  zz.models.enums.FieldType.NUMBER
+    required: false
+
+  left:
+
+    index: 4
+    type:  zz.models.enums.FieldType.NUMBER
+    required: false
