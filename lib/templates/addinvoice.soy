@@ -33,12 +33,28 @@
                 arrow_drop_down
             </i>
         </div>
-//        <div
-//            class="{css products-wrapper}"
-//            data-model="{$key.products}"
-//            data-view="test-codemotion-views-products"
-//            data-controller="test-codemotion-controllers-products">
-//        </div>
+        <div
+            class="{css products-title}"
+            data-class="{$key.showProducts}:{css show}">
+            <div
+                class="{css products-title--title}">
+                Product title
+            </div>
+            <div
+                class="{css products-title--amount}">
+                Amount
+            </div>
+            <div
+                class="{css products-title--price}">
+                Price
+            </div>
+        </div>
+        <div
+            class="{css products-wrapper}"
+            data-model="{$key.products}"
+            data-view="test-codemotion-views-products"
+            data-controller="test-codemotion-controllers-products">
+        </div>
         <div
             class="{css add-discount}">
             <div>

@@ -29,3 +29,31 @@ div.total-cost {
 
   margin-top: 30px;
 }
+
+div.products-title {
+
+  display: none;
+  margin: 10px 0;
+  &.show {
+
+    display: flex;
+  }
+  & div.products-title--title {
+
+    width: 100px;
+    margin-right: 5px;
+  }
+  & div.products-title--amount {
+
+    width: 110px;
+    margin-right: 5px;
+  }
+  & div.products-title--price {
+
+  }
+}
+
+div.add-discount {
+
+  margin-top: 10px;
+}

@@ -13,3 +13,9 @@ FIELDS:
     index: 1
     type:  zz.models.enums.FieldType.STRING
     required: false
+
+  price:
+
+    index: 2
+    type:  zz.models.enums.FieldType.NUMBER
+    required: false

@@ -1,0 +1,30 @@
+{namespace test.codemotion.templates.products}
+
+/**
+ * @param key
+ * @param value
+ */
+{template .model}
+    <div
+        class="{css products-node}">
+        <div
+            class="{css products-node--title}"
+            data-model="{$key.name}">
+            {$value.name}
+        </div>
+        <input
+            class="{css mdl-textfield__input} {css products-node--amount}"
+            data-input="{$key.amount}"
+            placeholder="Amount. Default is 1">
+        <div
+            class="{css products-node--price}">
+            <span>
+                $
+            </span>
+            <span
+                data-model="{$key.price}">
+                {$value.price}
+            </span>
+        </div>
+    </div>
+{/template}
